@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon"  type="image/png" href="fav.png">
+	</head>
+	<body>
+		<header>
+		</header>
+		<div class="head-content">
+		<div class="visible">
+    <ul>
+<li data-src="на Русском">Здравствуйте!</li>
+<li data-src="на Английском">Hello!</li>
+<li data-src="на Африкаанском">Goeie dag!</li>
+<li data-src="на Башкирском">Kheyerle irte!</li>
+<li data-src="на Белорусском">Прывитанне!</li>
+<li data-src="на Бенгальском">Nomoskaar!</li>
+<li data-src="на Болгарском">Zdraveite!</li>
+<li data-src="на Гагаузском">Gun aydin!</li>
+<li data-src="на Голландском">Hallo!</li>
+<li data-src="на Грузинском">Gamardjobat!</li>
+<li data-src="на Еврейском">Shalom!</li>
+<li data-src="на Падонскам">Превед Медвед!</li>
+<li data-src="на Польском">Dzien dobry!</li>
+<li data-src="на Португальском">Ola!</li>
+<li data-src="на Французском">Bonjour!</li>
+<li data-src="на Хинди">Namaste!</li>
+<li data-src="на Шведском">God dag!</li>
+<li data-src="на Шотландском">Guid mornin!</li>
+<li data-src="на Эсперанто">Saluton!</li>
+<li data-src="на Японском">Konnichi wa!</li>
+    </ul>
+		</div>
+		
+		</div>
+		<div class="center-content">
+		<div class="border">
+			<span class="description">Этот домен запросто можно купить написав сюда: </span><span id="domainNameEmail"></span>
+			</div>
+			</div>
+		<footer>		
+			<h1 class="shadow" id="domainNameText"></h1>
+		</footer>
+	</body>
+</html>         
+<script type="text/javascript">
+window.onload = function(e) {
+                console.log("window loaded");                
+var domainName = /:\/\/([^\/]+)/.exec(window.location.href)[1].replace('www.','');
+document.getElementById('domainNameText').innerHTML = domainName;
+document.getElementById('domainNameEmail').innerHTML = "manager@" + domainName;
+
+};
+</script>
